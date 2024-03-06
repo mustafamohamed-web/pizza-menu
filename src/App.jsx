@@ -1,18 +1,18 @@
 import "./index.css";
+import { Header } from "./components/Header/Header";
+import { Menu } from "./components/Menu/Menu";
+import { Footer } from "./components/Footer/Footer";
 
-function App() {
+const App = () => {
   return (
     <>
       <div className="app">
-        <h1 className="heading"> - FAST REACT PIZZA CO. -</h1>
-        <h3 className="subheading">OUR MENU</h3>
-        <p className="description">
-          Authentic Italian cuisine. 6 creative dishes to choose from. All from
-          our stone oven, all organic, all delicious
-        </p>
+        <Header />
+        <Menu />
+        <Footer />
       </div>
     </>
   );
-}
+};
 
 export default App;

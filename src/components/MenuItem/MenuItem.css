@@ -1,0 +1,37 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-l);
+  padding: var(--spacing-m) 0;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: var(--spacing-s);
+}
+
+.img-container {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  width: 15rem;
+}
+
+.name {
+  font-size: var(--fs-subtitle);
+}
+
+.ingredients {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-heading);
+  font-style: italic;
+}
+
+.price {
+  font-size: var(--fs-price);
+}

@@ -1,0 +1,25 @@
+.heading {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-heading);
+  color: var(--header-col);
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.subheading {
+  display: inline;
+  padding: var(--spacing-s) 0;
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-subheading);
+  color: black;
+  letter-spacing: 5px;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.description {
+  font-size: var(--fs-description);
+  line-height: 1.6;
+  text-align: center;
+  max-width: 60%;
+}

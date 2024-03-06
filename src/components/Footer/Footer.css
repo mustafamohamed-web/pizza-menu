@@ -1,0 +1,18 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+.footer-message {
+  font-size: var(--fs-text);
+}
+
+button {
+  background: var(--header-col);
+  padding: var(--spacing-m) var(--spacing-xl);
+  cursor: pointer;
+  border: none;
+}
