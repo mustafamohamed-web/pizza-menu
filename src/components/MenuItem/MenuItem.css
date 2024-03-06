@@ -8,9 +8,9 @@
 .menu-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
   gap: var(--spacing-s);
+  height: 100%;
 }
 
 .img-container {
