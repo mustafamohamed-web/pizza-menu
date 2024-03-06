@@ -1,8 +1,7 @@
 .menu-item {
   display: flex;
-  align-items: center;
+  width: 100%;
   gap: var(--spacing-l);
-  padding: var(--spacing-m) 0;
 }
 
 .menu-items {
@@ -19,7 +18,9 @@
 }
 
 img {
-  width: 15rem;
+  width: 12rem;
+  aspect-ratio: 1;
+  align-self: start;
 }
 
 .name {
@@ -34,4 +35,8 @@ img {
 
 .price {
   font-size: var(--fs-price);
+}
+
+.soldOut {
+  opacity: 0.5;
 }
