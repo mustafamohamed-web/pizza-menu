@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+:root {
+  /* Colours */
+  --main-bg: #f7f2e9;
+  --header-col: #edc84b;
+  --subheading-col: #252525;
+  --sold-out: #eee;
+
+  /* typography*/
+
+  --fs-heading: 5.2rem;
+  --fs-subheading: 2.4rem;
+  --fs-subtitle: 2rem;
+  --fs-price: 1.6rem;
+  --fs-text: 1.4rem;
+
+  --fw-heading: 300;
+  --fw-pizza-heading: 400;
+  --fw-subheading: 500;
+
+  --baseFont: "Roboto Mono";
+
+  --max-width: 1280px;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 7rem;
+  --spacing-xxxl: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--baseFont);
+  background-color: var(--main-bg);
+}
+
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.heading {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-heading);
+  color: var(--header-col);
+  text-align: center;
+  letter-spacing: 2px;
+  padding: var(--spacing-xl);
+}
+
+.subheading {
+  display: inline;
+  padding: 0 var(--spacing-s);
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-subheading);
+  color: black;
+  letter-spacing: 5px;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
