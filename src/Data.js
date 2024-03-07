@@ -42,3 +42,17 @@ export const pizzaData = [
     soldOut: false,
   },
 ];
+
+export const restaurantInfo = {
+  name: "Pizza Delight",
+  location: "123 Main St, Cityville",
+  openingTime: "12:00 AM",
+  closingTime: "10:00 PM",
+  contactNumber: "+123 456 7890",
+  website: "http://www.pizzadelight.com",
+};
+
+export const menu = {
+  pizzaData: pizzaData,
+  restaurantInfo: restaurantInfo,
+};

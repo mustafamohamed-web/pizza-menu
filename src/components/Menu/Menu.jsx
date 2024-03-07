@@ -1,25 +1,33 @@
 import { MenuItem } from "../MenuItem/MenuItem";
-import { pizzaData } from "../../Data";
+import PropTypes from "prop-types";
 import "./Menu.css";
 
-export const Menu = () => {
+export const Menu = ({ menu }) => {
   return (
     <>
       <ul className="menu-container">
-        {pizzaData.map((item, index) => {
-          const { name, ingredients, photoName, price, soldOut } = item;
-          return (
-            <MenuItem
-              key={index}
-              name={name}
-              ingredients={ingredients}
-              photoName={photoName}
-              price={price}
-              soldOut={soldOut}
-            />
-          );
-        })}
+        {menu ? (
+          menu.map((item, index) => {
+            const { name, ingredients, photoName, price, soldOut } = item;
+            return (
+              <MenuItem
+                key={index}
+                name={name}
+                ingredients={ingredients}
+                photoName={photoName}
+                price={price}
+                soldOut={soldOut}
+              />
+            );
+          })
+        ) : (
+          <p>Loading menu...</p>
+        )}
       </ul>
     </>
   );
+};
+
+Menu.propTypes = {
+  menu: PropTypes.array.isRequired,
 };
