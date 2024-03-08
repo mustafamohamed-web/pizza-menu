@@ -7,8 +7,6 @@
 .menu-items {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: var(--spacing-s);
   height: 100%;
 }
 
@@ -36,7 +34,11 @@ img {
 .price {
   font-size: var(--fs-price);
 }
-
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .soldOut {
   opacity: 0.5;
 }

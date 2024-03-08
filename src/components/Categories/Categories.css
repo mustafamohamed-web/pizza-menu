@@ -6,7 +6,7 @@
 
 .name {
   cursor: pointer;
-  margin-left: 2rem;
+  font-weight: var(--fw-subheading);
 }
 
 .name:hover {

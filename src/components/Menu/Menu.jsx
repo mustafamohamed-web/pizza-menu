@@ -8,7 +8,8 @@ export const Menu = ({ menu }) => {
       <ul className="menu-container">
         {menu ? (
           menu.map((item, index) => {
-            const { name, ingredients, photoName, price, soldOut } = item;
+            const { name, ingredients, photoName, price, soldOut, category } =
+              item;
             return (
               <MenuItem
                 key={index}
@@ -17,6 +18,7 @@ export const Menu = ({ menu }) => {
                 photoName={photoName}
                 price={price}
                 soldOut={soldOut}
+                category={category}
               />
             );
           })

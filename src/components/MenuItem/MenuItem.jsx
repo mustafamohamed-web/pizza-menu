@@ -1,7 +1,14 @@
 import "./MenuItem.css";
 import PropTypes from "prop-types";
 
-export const MenuItem = ({ name, ingredients, photoName, price, soldOut }) => {
+export const MenuItem = ({
+  name,
+  ingredients,
+  photoName,
+  price,
+  soldOut,
+  category,
+}) => {
   return (
     <>
       <li className={`menu-item ${soldOut ? "soldOut" : ""}`}>
@@ -28,4 +35,5 @@ MenuItem.propTypes = {
   ingredients: PropTypes.string.isRequired,
   photoName: PropTypes.string.isRequired,
   soldOut: PropTypes.bool,
+  category: PropTypes.string.isRequired,
 };

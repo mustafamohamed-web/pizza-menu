@@ -6,8 +6,6 @@ export const Header = ({ menu }) => {
   const uniqueCat = new Set(menu.map((item) => item.category));
   const categoryArr = [...uniqueCat];
 
-  // console.log(categories);
-
   return menu.length > 0 ? (
     <>
       <h1 className="heading">FAST REACT PIZZA CO.</h1>
@@ -20,7 +18,7 @@ export const Header = ({ menu }) => {
     </>
   ) : (
     <p className="description">
-      We are currently out of stock. We'll be back shortly
+      {"We are currently out of stock. We'll be back shortly"}
     </p>
   );
 };
