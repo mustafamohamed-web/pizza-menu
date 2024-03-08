@@ -1,0 +1,13 @@
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.name {
+  cursor: pointer;
+}
+
+.name:hover {
+  color: var(--header-col);
+}

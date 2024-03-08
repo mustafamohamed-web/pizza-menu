@@ -5,7 +5,6 @@ import { Footer } from "./components/Footer/Footer";
 import { menu } from "./Data";
 
 const App = () => {
-  console.log(menu.pizzaData);
   return (
     <>
       <div className={`app ${menu.pizzaData.length < 1 ? "app-closed" : ""} `}>
