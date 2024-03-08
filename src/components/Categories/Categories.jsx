@@ -5,9 +5,19 @@ export const Categories = ({ categories }) => {
   console.log(categories);
   return (
     <>
-      <form className="categories">
-        <ul>
-          <li>{categories}</li>
+      <form>
+        <ul className="categories">
+          {categories.length > 0 ? (
+            categories.map((item, index) => {
+              return (
+                <li key={index} className="name">
+                  {item}
+                </li>
+              );
+            })
+          ) : (
+            <p>No categories available</p>
+          )}
         </ul>
       </form>
     </>
@@ -15,5 +25,5 @@ export const Categories = ({ categories }) => {
 };
 
 Categories.propTypes = {
-  categories: PropTypes.object.isRequired,
+  categories: PropTypes.array.isRequired,
 };

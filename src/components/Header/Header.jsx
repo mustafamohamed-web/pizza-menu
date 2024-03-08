@@ -3,15 +3,10 @@ import { Categories } from "../Categories/Categories";
 import PropTypes from "prop-types";
 
 export const Header = ({ menu }) => {
-  const getCategory = () => {
-    return menu.map((item) => {
-      item.category;
-    });
-  };
+  const uniqueCat = new Set(menu.map((item) => item.category));
+  const categoryArr = [...uniqueCat];
 
-  const categories = new Set(getCategory());
-
-  console.log(categories);
+  // console.log(categories);
 
   return menu.length > 0 ? (
     <>
@@ -21,7 +16,7 @@ export const Header = ({ menu }) => {
         {` Authentic Italian cuisine. ${menu.length} creative dishes to choose from. All from
           our stone oven, all organic, all delicious`}
       </p>
-      <Categories categories={categories} />
+      <Categories categories={categoryArr} />
     </>
   ) : (
     <p className="description">
