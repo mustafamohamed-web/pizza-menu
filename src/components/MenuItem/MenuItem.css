@@ -20,6 +20,10 @@ img {
   aspect-ratio: 1;
   align-self: start;
 }
+.custom-link {
+  color: var(--text-col);
+  text-decoration: none;
+}
 
 .name {
   font-size: var(--fs-subtitle);

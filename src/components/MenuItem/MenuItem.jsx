@@ -1,14 +1,8 @@
 import "./MenuItem.css";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const MenuItem = ({
-  name,
-  ingredients,
-  photoName,
-  price,
-  soldOut,
-  category,
-}) => {
+export const MenuItem = ({ name, ingredients, photoName, price, soldOut }) => {
   return (
     <>
       <li className={`menu-item ${soldOut ? "soldOut" : ""}`}>
@@ -19,7 +13,9 @@ export const MenuItem = ({
         />
 
         <div className="menu-items">
-          <h3 className="name">{name}</h3>
+          <Link to={`/MenuItem/${name}`} className="custom-link">
+            <h3 className="name">{name}</h3>
+          </Link>
           <p className="ingredients">{ingredients}</p>
           <p className="price">{price}</p>
           <p>{soldOut ? "Sold Out" : ""}</p>
@@ -35,5 +31,4 @@ MenuItem.propTypes = {
   ingredients: PropTypes.string.isRequired,
   photoName: PropTypes.string.isRequired,
   soldOut: PropTypes.bool,
-  category: PropTypes.string.isRequired,
 };
