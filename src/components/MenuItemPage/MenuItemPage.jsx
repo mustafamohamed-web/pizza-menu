@@ -1,5 +1,6 @@
 import { menu } from "../../Data";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
 import "./MenuItemPage.css";
 
 export const MenuItemPage = () => {
@@ -36,6 +37,10 @@ export const MenuItemPage = () => {
             </select>
           </div>
         </div>
+        <Link to="/">
+          {" "}
+          <button>Back to home</button>
+        </Link>
       </div>
     </div>
   );

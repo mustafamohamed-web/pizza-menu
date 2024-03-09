@@ -4,11 +4,12 @@
   align-items: center;
   width: 100%;
   gap: 4rem;
+  margin-top: 20rem;
 }
 
 .menu-img {
   align-self: center;
-  width: 80%;
+  width: 60%;
 }
 
 .info {
