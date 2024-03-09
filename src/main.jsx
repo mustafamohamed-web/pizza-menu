@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-
+import { MenuItemPage } from "./components/MenuItemPage/MenuItemPage.jsx";
 import { MenuItem } from "./components/MenuItem/MenuItem.jsx";
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "MenuItem/:name",
-    element: <MenuItem />,
+    element: <MenuItemPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
